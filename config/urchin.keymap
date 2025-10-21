@@ -1,20 +1,18 @@
 #include <dt-bindings/zmk/keys.h>
-#include <behaviors/keymap.dtsi>
-#include <behaviors/tap_dance.dtsi>
-#include <behaviors/macro.dtsi>
+#include <dt-bindings/zmk/behaviors.dtsi>
 
 / {
     behaviors {
         mt: mod_tap {
             compatible = "zmk,behavior-mod-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <215>; // TAPPING_TERM + 15 for pinky/ring fingers
+            tapping-term-ms = <215>;
         };
         mt_vim: mod_tap_vim {
             compatible = "zmk,behavior-mod-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <150>; // Enable key repeating for Vim navigation
+            quick-tap-ms = <150>;
         };
     };
 
@@ -112,7 +110,7 @@
     };
 
     tap_dances {
-        compatible = "zmk,tap-dance";
+       兼容 = "zmk,tap-dance";
         td_q_tab {
             label = "TD_Q_TAB";
             tapping-term-ms = <215>;
@@ -204,8 +202,7 @@
         };
 
         mov_layer {
-            bindings Syndicating to X:
-            <
+            bindings = <
                 &kp QWERTY &kp ACL0 &kp ACL1 &kp ACL2 &kp QWERTY &kp MPLY &kp VOLD &kp VOLU &kp MUTE &kp QWERTY
                 &kp QWERTY &kp QWERTY &kp BTN2 &kp BTN1 &kp QWERTY &kp MS_L &kp MS_D &kp MS_U &kp MS_R &kp QWERTY
                 &kp LSHIFT &kp LCTRL &kp LALT &kp LGUI &kp QWERTY &kp WH_L &kp WH_D &kp WH_U &kp WH_R &kp QWERTY
