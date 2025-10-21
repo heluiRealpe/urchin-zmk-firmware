@@ -55,22 +55,22 @@
         macro_lalttab {
             label = "LALT_TAB";
             compatible = "zmk,macro";
-            bindings = <&kp LALT TAB>;
+            bindings = <&kp LALT &kp TAB>;
         };
         macro_rctrltab {
             label = "RCTRL_TAB";
             compatible = "zmk,macro";
-            bindings = <&kp RCTRL TAB>;
+            bindings = <&kp RCTRL &kp TAB>;
         };
         macro_winshot {
             label = "WINSHOT";
             compatible = "zmk,macro";
-            bindings = <&kp LGUI S>;
+            bindings = <&kp LGUI &kp S>;
         };
         macro_cad {
             label = "CAD";
             compatible = "zmk,macro";
-            bindings = <&kp LALT LCTRL DEL>;
+            bindings = <&kp LALT &kp LCTRL &kp DEL>;
         };
         macro_macro1 {
             label = "MACRO1";
@@ -110,7 +110,7 @@
         macro_srchsel {
             label = "SRCHSEL";
             compatible = "zmk,macro";
-            bindings = <&kp LCTRL C &kp T &kp LCTRL V &kp ENTER>;
+            bindings = <&kp LCTRL &kp C &kp T &kp LCTRL &kp V &kp RET>;
         };
         macro_no_sleep {
             label = "NO_SLEEP";
@@ -159,7 +159,7 @@
         td_ene {
             label = "TD_ENE";
             tapping-term-ms = <215>;
-            bindings = <&kp N>, <&kp RALT N>;
+            bindings = <&kp N>, <&kp RALT &kp N>;
         };
     };
 
