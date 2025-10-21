@@ -242,9 +242,9 @@
         num_layer {
             label = "NUM";
             bindings = <
-                &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &kp OM_DBLS &kp OM_BTN2 &kp OM_U &kp DEL &kp BSPC
-                &kp F6 &kp F7 &kp F8 &kp F9 &kp F10        &kp OM_BTNS &kp OM_L &kp OM_D &kp OM_R &kp QUOT
-                &kp F11 &kp F12 &trans &trans &trans       &macro_srchsel &kp SELWORD &macro_selline &trans &trans
+                &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &kp MS_BTN2 &kp MS_BTN1 &kp MS_U &kp DEL &kp BSPC
+                &kp F6 &kp F7 &kp F8 &kp F9 &kp F10        &kp MS_BTN3 &kp MS_L &kp MS_D &kp MS_R &kp QUOT
+                &kp F11 &kp F12 &trans &trans &trans       &macro_srchsel &kp LCTRL LSHIFT LEFT &macro_selline &trans &trans
                                     &trans &trans    &trans &trans
             >;
         };
@@ -253,7 +253,7 @@
             label = "MOV";
             bindings = <
                 &kp QWERTY &kp ACL0 &kp ACL1 &kp ACL2 &kp QWERTY &kp MPLY &kp VOLD &kp VOLU &kp MUTE &kp QWERTY
-                &kp QWERTY &kp QWERTY &kp BTN2 &kp BTN1 &kp QWERTY &kp MS_L &kp MS_D &kp MS_U &kp MS_R &kp QWERTY
+                &kp QWERTY &kp QWERTY &kp MS_BTN2 &kp MS_BTN1 &kp QWERTY &kp MS_L &kp MS_D &kp MS_U &kp MS_R &kp QWERTY
                 &kp LSHIFT &kp LCTRL &kp LALT &kp LGUI &kp QWERTY &kp WH_L &kp WH_D &kp WH_U &kp WH_R &kp QWERTY
                                     &trans &trans    &trans &trans
             >;
