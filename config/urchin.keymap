@@ -1,5 +1,4 @@
 #include <dt-bindings/zmk/keys.h>
-#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
@@ -30,110 +29,92 @@
     macros {
         macro_undo {
             label = "UNDO";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp LCTRL Z>;
         };
         macro_cut {
             label = "CUT";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp LCTRL X>;
         };
         macro_copy {
             label = "COPY";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp LCTRL C>;
         };
         macro_paste {
             label = "PASTE";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp LCTRL V>;
         };
         macro_redo {
             label = "REDO";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp LCTRL Y>;
         };
         macro_lalttab {
             label = "LALT_TAB";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp LALT TAB>;
         };
         macro_rctrltab {
             label = "RCTRL_TAB";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp RCTRL TAB>;
         };
         macro_winshot {
             label = "WINSHOT";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp LGUI S>;
         };
         macro_cad {
             label = "CAD";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp LALT LCTRL DEL>;
         };
         macro_macro1 {
             label = "MACRO1";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp B &kp N1 &kp T &kp L &kp N0 &kp C &kp K &kp N3 &kp R>;
         };
         macro_macro2 {
             label = "MACRO2";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp Y &kp N0 &kp N4 &kp N5 &kp N7 &kp N9 &kp N5 &kp R &kp H &kp N3 &kp C &kp T &kp N0 &kp R &kp R &kp N3 &kp N4 &kp L &kp P &kp N3 &kp C &kp N4 &kp S &kp T &kp R &kp N1 &kp L &kp L &kp N0>;
         };
         macro_macro3 {
             label = "MACRO3";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp Z &kp N9 &kp T &kp N4 &kp J &kp H &kp N4 &kp Z &kp Q &kp H &kp DOLLAR &kp B &kp F &kp P &kp I>;
         };
         macro_macro4 {
             label = "MACRO4";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp N2 &kp N4 &kp N1 &kp N7 &kp N9 &kp N0 &kp N6>;
         };
         macro_macro5 {
             label = "MACRO5";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp B &kp N3 &kp L &kp DOLLAR &kp N &kp R &kp V &kp N1 &kp Z &kp F &kp N3 &kp R &kp N &kp DOLLAR &kp N3 &kp Z>;
         };
         macro_macro6 {
             label = "MACRO6";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp N3 &kp S &kp T &kp R &kp N3 &kp L &kp L &kp N4 &kp R &kp N3 &kp N4 &kp L &kp P &kp N3 &kp AMP &kp R &kp V &kp N1 &kp Z>;
         };
         macro_selline {
             label = "SELLINE";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp HOME &kp LSHIFT END>;
         };
         macro_srchsel {
             label = "SRCHSEL";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp LCTRL C &kp T &kp LCTRL V &kp ENTER>;
         };
         macro_no_sleep {
             label = "NO_SLEEP";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,macro";
             bindings = <&kp MS_D &kp UP>;
         };
     };
@@ -205,7 +186,7 @@
                 &td_q_tab &td_whome &td_eend &kp R &kp T        &kp Y &kp U &kp I &kp O &kp P
                 &td_a_esc &kp S &kp D &kp F &kp G              &mt_vim H &mt_vim J &mt_vim K &mt_vim L &td_sclqt
                 &mt LSHIFT Z &mt LCTRL X &mt LALT C &mt LGUI V &kp B &td_ene &mt RGUI M &mt RALT COMM &mt RCTRL DOT &mt RSHIFT SLASH
-                                    &lt LOWER BSPC &qt LSHIFT SPC    &kp SPC &lt RAISE ENT
+                                    &lt LOWER BSPC &qt &kp LSHIFT &kp SPC    &kp SPC &lt RAISE ENT
             >;
         };
 
@@ -234,7 +215,7 @@
             bindings = <
                 &trans &trans &kp END &trans &trans         &macro_macro1 &macro_macro3 &macro_macro4 &macro_macro2 &macro_no_sleep
                 &kp HOME &trans &kp BRIU &kp BRID &trans    &macro_macro5 &macro_macro6 &trans &trans &trans
-                &trans &trans &trans &trans &trans         &trans &kp AC_TOGG &trans &trans &bootloader
+                &trans &trans &trans &trans &trans         &trans &kp AC_TOGG &trans &trans &kp QK_BOOT
                                     &trans &trans    &trans &trans
             >;
         };
