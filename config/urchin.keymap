@@ -184,11 +184,15 @@
 
     combos {
         compatible = "zmk,combos";
-        // Example combo: both left thumb keys for ADJUST layer
         combo_adjust {
             timeout-ms = <200>;
             key-positions = <30 31>;
             bindings = <&mo ADJUST>;
+        };
+        combo_num {
+            timeout-ms = <200>;
+            key-positions = <31 32>;
+            bindings = <&mo NUM>;
         };
     };
 
