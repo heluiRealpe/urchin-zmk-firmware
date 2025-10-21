@@ -105,7 +105,7 @@
         macro_selline {
             label = "SELLINE";
             compatible = "zmk,macro";
-            bindings = <&kp HOME &kp LSHIFT END>;
+            bindings = <&kp HOME &kp LSHIFT &kp END>;
         };
         macro_srchsel {
             label = "SRCHSEL";
