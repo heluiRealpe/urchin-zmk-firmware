@@ -30,27 +30,27 @@
         macro_undo {
             label = "UNDO";
             compatible = "zmk,macro";
-            bindings = <&kp LCTRL Z>;
+            bindings = <&kp LCTRL &kp Z>;
         };
         macro_cut {
             label = "CUT";
             compatible = "zmk,macro";
-            bindings = <&kp LCTRL X>;
+            bindings = <&kp LCTRL &kp X>;
         };
         macro_copy {
             label = "COPY";
             compatible = "zmk,macro";
-            bindings = <&kp LCTRL C>;
+            bindings = <&kp LCTRL &kp C>;
         };
         macro_paste {
             label = "PASTE";
             compatible = "zmk,macro";
-            bindings = <&kp LCTRL V>;
+            bindings = <&kp LCTRL &kp V>;
         };
         macro_redo {
             label = "REDO";
             compatible = "zmk,macro";
-            bindings = <&kp LCTRL Y>;
+            bindings = <&kp LCTRL &kp Y>;
         };
         macro_lalttab {
             label = "LALT_TAB";
