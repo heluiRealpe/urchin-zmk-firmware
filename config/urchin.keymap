@@ -118,7 +118,7 @@
         td_extil {
             label = "TD_EXTIL";
             tapping-term-ms = <215>;
-            bindings = <&kp KP_EXCLAMATION &kp KP_TILDE>;
+            bindings = <&kp EXCLAMATION &kp TILDE>;
         };
         td_sclqt {
             label = "TD_SCLQT";
