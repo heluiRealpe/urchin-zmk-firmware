@@ -123,7 +123,7 @@
         td_sclqt {
             label = "TD_SCLQT";
             tapping-term-ms = <215>;
-            bindings = <&kp SEMI &kp SQT>;
+            bindings = <&kp SCLN &kp QUOT>;
         };
         td_whome {
             label = "TD_WHOME";
