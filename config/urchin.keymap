@@ -72,11 +72,6 @@
             compatible = "zmk,macro";
             bindings = <&kp LALT &kp LCTRL &kp DEL>;
         };
-        macro_macro1 {
-            label = "MACRO1";
-            compatible = "zmk,macro";
-            bindings = <&kp B &kp N1 &kp T &kp L &kp N0 &kp C &kp K &kp N3 &kp R>;
-        };
         macro_macro2 {
             label = "MACRO2";
             compatible = "zmk,macro";
@@ -101,21 +96,6 @@
             label = "MACRO6";
             compatible = "zmk,macro";
             bindings = <&kp N3 &kp S &kp T &kp R &kp N3 &kp L &kp L &kp N4 &kp R &kp N3 &kp N4 &kp L &kp P &kp N3 &kp AMP &kp R &kp V &kp N1 &kp Z>;
-        };
-        macro_selline {
-            label = "SELLINE";
-            compatible = "zmk,macro";
-            bindings = <&kp HOME &kp LSHIFT &kp END>;
-        };
-        macro_srchsel {
-            label = "SRCHSEL";
-            compatible = "zmk,macro";
-            bindings = <&kp LCTRL &kp C &kp T &kp LCTRL &kp V &kp RET>;
-        };
-        macro_no_sleep {
-            label = "NO_SLEEP";
-            compatible = "zmk,macro";
-            bindings = <&kp MS_D &kp UP>;
         };
     };
 
@@ -213,9 +193,9 @@
         adjust_layer {
             label = "ADJUST";
             bindings = <
-                &trans &trans &kp END &trans &trans         &macro_macro1 &macro_macro3 &macro_macro4 &macro_macro2 &macro_no_sleep
-                &kp HOME &trans &kp BRIU &kp BRID &trans    &macro_macro5 &macro_macro6 &trans &trans &trans
-                &trans &trans &trans &trans &trans         &trans &kp AC_TOGG &trans &trans &kp QK_BOOT
+                &trans &trans &kp END &bt BT_CLR &bt BT_SEL 0        &bt BT_SEL 3 &macro_macro3 &macro_macro4 &macro_macro2 &trans
+                &kp HOME &trans &kp BRIU &kp BRID &bt BT_SEL 1    &macro_macro5 &macro_macro6 &trans &trans &trans
+                &trans &trans &trans &trans &bt BT_SEL 2         &trans &kp AC_TOGG &trans &trans &kp &bootloader
                                     &trans &trans    &trans &trans
             >;
         };
@@ -225,7 +205,7 @@
             bindings = <
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &kp MS_BTN2 &kp MS_BTN1 &kp MS_U &kp DEL &kp BSPC
                 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10        &kp MS_BTN3 &kp MS_L &kp MS_D &kp MS_R &kp QUOT
-                &kp F11 &kp F12 &trans &trans &trans       &macro_srchsel &kp LCTRL LSHIFT LEFT &macro_selline &trans &trans
+                &kp F11 &kp F12 &trans &trans &trans       &trans &kp LCTRL LSHIFT LEFT &trans &trans &trans
                                     &trans &trans    &trans &trans
             >;
         };
