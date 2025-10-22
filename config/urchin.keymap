@@ -79,7 +79,7 @@
         macro_macro3 {
             label = "MACRO3";
             compatible = "zmk,macro";
-            bindings = <&kp Z &kp KP_9 &kp T &kp KP_4 &kp J &kp H &kp KP_4 &kp Z &kp Q &kp H &mt LSHIFT KP_4 &kp B &kp F &kp P &kp I>;
+            bindings = <&kp Z &kp KP_9 &kp T &kp KP_4 &kp J &kp H &kp KP_4 &kp Z &kp Q &kp H &kp LS &kp KP_4 &kp B &kp F &kp P &kp I>;
         };
         macro_macro4 {
             label = "MACRO4";
@@ -89,12 +89,12 @@
         macro_macro5 {
             label = "MACRO5";
             compatible = "zmk,macro";
-            bindings = <&kp B &kp KP_3 &kp L &mt LSHIFT KP_4 &kp N &kp R &kp V &kp KP_1 &kp Z &kp F &kp KP_3 &kp R &kp N &mt LSHIFT KP_4 &kp KP_3 &kp Z>;
+            bindings = <&kp B &kp KP_3 &kp L &kp LS &kp KP_4 &kp N &kp R &kp V &kp KP_1 &kp Z &kp F &kp KP_3 &kp R &kp N &kp LS &kp KP_4 &kp KP_3 &kp Z>;
         };
         macro_macro6 {
             label = "MACRO6";
             compatible = "zmk,macro";
-            bindings = <&kp KP_3 &kp S &kp T &kp R &kp KP_3 &kp L &kp L &kp KP_4 &kp R &kp KP_3 &kp KP_4 &kp L &kp P &kp KP_3 &mt LSHIFT KP_7 &kp R &kp V &kp KP_1 &kp Z>;
+            bindings = <&kp KP_3 &kp S &kp T &kp R &kp KP_3 &kp L &kp L &kp KP_4 &kp R &kp KP_3 &kp KP_4 &kp L &kp P &kp KP_3 &kp LS &kp KP_7 &kp R &kp V &kp KP_1 &kp Z>;
         };
     };
 
