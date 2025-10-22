@@ -104,42 +104,42 @@
         td_q_tab {
             label = "TD_Q_TAB";
             tapping-term-ms = <215>;
-            bindings = <&kp Q>, <&kp TAB>;
+            bindings = <&kp Q &kp TAB>;
         };
         td_a_esc {
             label = "TD_A_ESC";
             tapping-term-ms = <215>;
-            bindings = <&kp A>, <&kp ESC>;
+            bindings = <&kp A &kp ESC>;
         };
         td_onegr {
             label = "TD_ONEGR";
             tapping-term-ms = <215>;
-            bindings = <&kp N1>, <&kp GRAVE>;
+            bindings = <&kp N1 &kp GRAVE>;
         };
         td_extil {
             label = "TD_EXTIL";
             tapping-term-ms = <215>;
-            bindings = <&kp EXLM>, <&kp TILDE>;
+            bindings = <&kp EXLM &kp TILDE>;
         };
         td_sclqt {
             label = "TD_SCLQT";
             tapping-term-ms = <215>;
-            bindings = <&kp SCLN>, <&kp QUOT>;
+            bindings = <&kp SCLN &kp QUOT>;
         };
         td_whome {
             label = "TD_WHOME";
             tapping-term-ms = <215>;
-            bindings = <&kp W>, <&kp HOME>;
+            bindings = <&kp W &kp HOME>;
         };
         td_eend {
             label = "TD_EEND";
             tapping-term-ms = <215>;
-            bindings = <&kp E>, <&kp END>;
+            bindings = <&kp E &kp END>;
         };
         td_ene {
             label = "TD_ENE";
             tapping-term-ms = <215>;
-            bindings = <&kp N>, <&kp RALT &kp N>;
+            bindings = <&kp N &kp RALT &kp N>;
         };
     };
 
