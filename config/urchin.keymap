@@ -118,12 +118,12 @@
         td_extil {
             label = "TD_EXTIL";
             tapping-term-ms = <215>;
-            bindings = <&kp EXCL &kp TILDE>;
+            bindings = <&kp N1 &kp GRAVE>;
         };
         td_sclqt {
             label = "TD_SCLQT";
             tapping-term-ms = <215>;
-            bindings = <&kp SCLN &kp QUOT>;
+            bindings = <&kp SEMI &kp SQT>;
         };
         td_whome {
             label = "TD_WHOME";
