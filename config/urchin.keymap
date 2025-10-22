@@ -74,27 +74,27 @@
         macro_macro2 {
             label = "MACRO2";
             compatible = "zmk,macro";
-            bindings = <&kp Y &kp N0 &kp N4 &kp N5 &kp N7 &kp N9 &kp N5 &kp R &kp H &kp N3 &kp C &kp T &kp N0 &kp R &kp R &kp N3 &kp N4 &kp L &kp P &kp N3 &kp C &kp N4 &kp S &kp T &kp R &kp N1 &kp L &kp L &kp N0>;
+            bindings = <&kp Y &kp KP_0 &kp KP_4 &kp KP_5 &kp KP_7 &kp KP_9 &kp KP_5 &kp R &kp H &kp KP_3 &kp C &kp T &kp KP_0 &kp R &kp R &kp KP_3 &kp KP_4 &kp L &kp P &kp KP_3 &kp C &kp KP_4 &kp S &kp T &kp R &kp KP_1 &kp L &kp L &kp KP_0>;
         };
         macro_macro3 {
             label = "MACRO3";
             compatible = "zmk,macro";
-            bindings = <&kp Z &kp N9 &kp T &kp N4 &kp J &kp H &kp N4 &kp Z &kp Q &kp H &kp DOLLAR &kp B &kp F &kp P &kp I>;
+            bindings = <&kp Z &kp KP_9 &kp T &kp KP_4 &kp J &kp H &kp KP_4 &kp Z &kp Q &kp H &kp KP_DLR &kp B &kp F &kp P &kp I>;
         };
         macro_macro4 {
             label = "MACRO4";
             compatible = "zmk,macro";
-            bindings = <&kp N2 &kp N4 &kp N1 &kp N7 &kp N9 &kp N0 &kp N6>;
+            bindings = <&kp KP_2 &kp KP_4 &kp KP_1 &kp KP_7 &kp KP_9 &kp KP_0 &kp KP_6>;
         };
         macro_macro5 {
             label = "MACRO5";
             compatible = "zmk,macro";
-            bindings = <&kp B &kp N3 &kp L &kp DOLLAR &kp N &kp R &kp V &kp N1 &kp Z &kp F &kp N3 &kp R &kp N &kp DOLLAR &kp N3 &kp Z>;
+            bindings = <&kp B &kp KP_3 &kp L &kp KP_DLR &kp N &kp R &kp V &kp KP_1 &kp Z &kp F &kp KP_3 &kp R &kp N &kp KP_DLR &kp KP_3 &kp Z>;
         };
         macro_macro6 {
             label = "MACRO6";
             compatible = "zmk,macro";
-            bindings = <&kp N3 &kp S &kp T &kp R &kp N3 &kp L &kp L &kp N4 &kp R &kp N3 &kp N4 &kp L &kp P &kp N3 &kp AMP &kp R &kp V &kp N1 &kp Z>;
+            bindings = <&kp KP_3 &kp S &kp T &kp R &kp KP_3 &kp L &kp L &kp KP_4 &kp R &kp KP_3 &kp KP_4 &kp L &kp P &kp KP_3 &kp KP_AMPS &kp R &kp V &kp KP_1 &kp Z>;
         };
     };
 
@@ -113,7 +113,7 @@
         td_onegr {
             label = "TD_ONEGR";
             tapping-term-ms = <215>;
-            bindings = <&kp N1 &kp GRAVE>;
+            bindings = <&kp KP_1 &kp GRAVE>;
         };
         td_extil {
             label = "TD_EXTIL";
@@ -172,7 +172,7 @@
         lower_layer {
             label = "LOWER";
             bindings = <
-                &td_onegr &kp N2 &kp N3 &kp N4 &kp N5         &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+                &td_onegr &kp KP_2 &kp KP_3 &kp KP_4 &kp KP_5         &kp KP_6 &kp KP_7 &kp KP_8 &kp KP_9 &kp KP_0
                 &kp ESC &macro_lalttab &macro_rctrltab &kp REPEAT &kp TAB &kp BSLS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT
                 &macro_undo &macro_cut &macro_copy &macro_paste &macro_redo &kp CAPS &kp CW_TOGG &mt LALT COMM &kp DOT &kp SLASH
                                     &trans &kp ENT    &mo ADJUST &tog MOV
