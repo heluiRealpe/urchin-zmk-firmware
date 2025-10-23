@@ -97,6 +97,11 @@
             compatible = "zmk,macro";
             bindings = <&kp N3 &kp S &kp T &kp R &kp N3 &kp L &kp L &kp N4 &kp R &kp N3 &kp N4 &kp L &kp P &kp N3 &kp N7 &kp R &kp V &kp N1 &kp Z>;
         };
+        macro_ctrl_shift_left {
+            label = "CTRL_SHIFT_LEFT";
+            compatible = "zmk,macro";
+            bindings = <&kp LCTRL &kp LSHIFT &kp LEFT>;
+        };
     };
 
     tap_dances {
@@ -215,7 +220,7 @@
             bindings = <
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &kp MS_BTN2 &kp MS_BTN1 &kp MS_U &kp DEL &kp BSPC
                 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10        &kp MS_BTN3 &kp MS_L &kp MS_D &kp MS_R &kp QUOT
-                &kp F11 &kp F12 &trans &trans &trans       &trans &kp LC(LS(LEFT)) &trans &trans &trans
+                &kp F11 &kp F12 &trans &trans &trans       &trans &macro_ctrl_shift_left &trans &trans &trans
                                     &trans &trans    &trans &trans
             >;
         };
