@@ -220,7 +220,7 @@
             bindings = <
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &kp MS_BTN2 &kp MS_BTN1 &kp MS_U &kp DEL &kp BSPC
                 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10        &kp MS_BTN3 &kp MS_L &kp MS_D &kp MS_R &kp QUOT
-                &kp F11 &kp F12 &trans &trans &trans       &trans &macro_ctrl_shift_left &trans &trans &trans
+                &kp F11 &kp F12 &trans &trans &trans       &trans &kp LEFT &trans &trans &trans
                                     &trans &trans    &trans &trans
             >;
         };
