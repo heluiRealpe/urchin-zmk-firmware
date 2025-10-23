@@ -202,9 +202,9 @@
         adjust_layer {
             label = "ADJUST";
             bindings = <
-                &trans &trans &kp END &bt BT_CLR &bt BT_SEL <0>        &bt BT_SEL <3> &macro_macro3 &macro_macro4 &macro_macro2 &trans
-                &kp HOME &trans &kp BRIU &kp BRID &bt BT_SEL <1>    &macro_macro5 &macro_macro6 &trans &trans &trans
-                &trans &trans &trans &trans &bt BT_SEL <2>         &trans &kp AC_TOGG &trans &trans &bootloader
+                &trans &trans &kp END &bt BT_CLR &bt BT_SEL_0        &bt BT_SEL_3 &macro_macro3 &macro_macro4 &macro_macro2 &trans
+                &kp HOME &trans &kp BRIU &kp BRID &bt BT_SEL_1    &macro_macro5 &macro_macro6 &trans &trans &trans
+                &trans &trans &trans &trans &bt BT_SEL_2         &trans &kp AC_TOGG &trans &trans &bootloader
                                     &trans &trans    &trans &trans
             >;
         };
