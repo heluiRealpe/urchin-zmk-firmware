@@ -152,7 +152,7 @@
         td_ene {
             label = "TD_ENE";
             tapping-term-ms = <215>;
-            bindings = <&kp N>, <&macro_n_tilde>;
+            bindings = <&kp N &macro_n_tilde>;
         };
     };
 
