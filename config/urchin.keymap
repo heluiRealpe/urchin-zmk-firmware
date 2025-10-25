@@ -11,12 +11,12 @@
 #include "keymap_italian.h"
 
 // Layer definitions
-#define BASE 0
-#define SYM 1
-#define EXT 2
-#define FNC 3
-#define SYM2 4
-#define ACCENT 5
+#define QUERTY 0
+#define LOWER 1
+#define RAISE 2
+#define MOV 3
+#define ADJUST 4
+#define NUM 5
 #define SETTINGS 6
 // -----------------
 
@@ -51,21 +51,60 @@
 			#binding-cells = <0>;
 			bindings = <&kp LSHIFT &kp RSHIFT &kp LCTRL &kp RCTRL &kp LALT &kp RALT &kp LGUI &kp RGUI>;
 		};
+        macro_undo {
+            label = "UNDO";
+            compatible = "zmk,macro";
+            bindings = <&kp LCTRL &kp Z>;
+        };
+        macro_cut {
+            label = "CUT";
+            compatible = "zmk,macro";
+            bindings = <&kp LCTRL &kp X>;
+        };
+        macro_copy {
+            label = "COPY";
+            compatible = "zmk,macro";
+            bindings = <&kp LCTRL &kp C>;
+        };
+        macro_paste {
+            label = "PASTE";
+            compatible = "zmk,macro";
+            bindings = <&kp LCTRL &kp V>;
+        };
+        macro_redo {
+            label = "REDO";
+            compatible = "zmk,macro";
+            bindings = <&kp LCTRL &kp Y>;
+        };
+        macro_lalttab {
+            label = "LALT_TAB";
+            compatible = "zmk,macro";
+            bindings = <&kp LALT &kp TAB>;
+        };
+        macro_rctrltab {
+            label = "RCTRL_TAB";
+            compatible = "zmk,macro";
+            bindings = <&kp RCTRL &kp TAB>;
+        };
+        macro_winshot {
+            label = "WINSHOT";
+            compatible = "zmk,macro";
+            bindings = <&kp LGUI &kp S>;
+        };
+        macro_n_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RALT &kp N>; // Assumes RALT + N sends 'ñ' on your OS
+        };
 	};
 
 	combos {
 		compatible = "zmk,combos";
-		// both right thumb keys
-		combo_accent {
-			timeout-ms = <200>;
-			key-positions = <32 33>;
-			bindings = <&mo ACCENT>;
-		};
 		// internal-left & external-right thumb keys
 		combo_sym2 {
 			timeout-ms = <200>;
 			key-positions = <31 33>;
-			bindings = <&mo SYM2>;
+			bindings = <&mo ADJUST>;
 		};
 		// both left thumb keys
 		combo_settings {
@@ -73,54 +112,101 @@
 			key-positions = <30 31>;
 			bindings = <&mo SETTINGS>;
 		};
-		// left index & middle fingers (home-row)
-		// hold control & space for Adobe workflow
-		combo_ctrl_space {
-			timeout-ms = <200>;
-			key-positions = <12 13>;
-			bindings = <&kp LC(SPACE)>;
-			layers = <BASE>;
-		};
+        combo_adjust {
+            timeout-ms = <200>;
+            key-positions = <30 34>;
+            bindings = <&mo ADJUST>;
+        };
+        combo_num {
+            timeout-ms = <200>;
+            key-positions = <31 32>;
+            bindings = <&mo NUM>;
+        };
 	};
+
+    tap_dances {
+        compatible = "zmk,tap-dance";
+        td_q_tab {
+            label = "TD_Q_TAB";
+            tapping-term-ms = <215>;
+            bindings = <&kp Q &kp TAB>;
+        };
+        td_a_esc {
+            label = "TD_A_ESC";
+            tapping-term-ms = <215>;
+            bindings = <&kp A &kp ESC>;
+        };
+        td_onegr {
+            label = "TD_ONEGR";
+            tapping-term-ms = <215>;
+            bindings = <&kp N1 &kp GRAVE>;
+        };
+        td_extil {
+            label = "TD_EXTIL";
+            tapping-term-ms = <215>;
+            bindings = <&kp N1 &kp GRAVE>;
+        };
+        td_sclqt {
+            label = "TD_SCLQT";
+            tapping-term-ms = <215>;
+            bindings = <&kp SCLN &kp QUOT>;
+        };
+        td_whome {
+            label = "TD_WHOME";
+            tapping-term-ms = <215>;
+            bindings = <&kp W &kp HOME>;
+        };
+        td_eend {
+            label = "TD_EEND";
+            tapping-term-ms = <215>;
+            bindings = <&kp E &kp END>;
+        };
+        td_ene {
+            label = "TD_ENE";
+            tapping-term-ms = <215>;
+            bindings = <&kp N>, <&macro_n_tilde>;
+        };
+    };
 
 	keymap {
 		compatible = "zmk,keymap";
 		// Base alpha layer
 		default_layer {
-			label = "Base";
+			label = "Querty";
 			bindings = <
-			&kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P 
-			&kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L &kp IT_OGRV
-			&kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp IT_UGRV
-							&mo EXT &qt LSHIFT SPACE           &kp SPACE &sl SYM
+            &td_q_tab &td_whome &td_eend &kp R &kp T        &kp Y &kp U &kp I &kp O &kp P
+            &td_a_esc &kp S     &kp D    &kp F &kp G        &kp H &kp J &kp K &kp L &td_sclqt
+            &mt LSHIFT Z &mt LCTRL X &mt LALT C &mt LGUI V  &kp B &td_ene &mt RGUI M &mt RALT COMM &mt RCTRL DOT &mt RSHIFT SLASH
+                                    &lt LOWER BSPC &lt SYM SPACE   &kp SPACE &lt EXT ENT
 			>;
 		};
 
 		// Numbers and high frequency symbols
-		sym_layer {
-			label = "Sym.";
+		lower_layer {
+			label = "Lower";
 			bindings = <
-			&kp N1 &kp N2 &kp N3 &kp N4 &kp N5		                                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-			&kp IT_LESS &kp IT_USD &kp IT_LPAR &kp IT_LBRC &kp IT_LBKT  &kp IT_EQL &kp IT_QUES &kp IT_SQUOT &kp IT_MINUS &kp IT_AST
-			&kp IT_GREAT &kp IT_PERC &kp IT_RPAR &kp IT_RBRC &kp IT_RBKT 	&kp IT_AT &kp IT_EXCL &kp IT_DQUOT &kp IT_PLUS &kp IT_FSLH
-														&mo FNC  &mo SYM2       &trans &trans
+            &td_onegr   &kp N2         &kp N3          &kp N4       &kp N5         &kp N6   &kp N7 &kp N8 &kp N9 &kp N0
+            &kp ESC     &macro_lalttab &macro_rctrltab &key_repeat  &kp TAB        &kp BSLS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT
+            &macro_undo &macro_cut     &macro_copy     &macro_paste &macro_redo    &kp CAPS &kp CW_TOGG &mt LALT COMM &kp DOT &kp SLASH
+                                         &trans &kp ENT    &mo ADJUST &tog MOV
 			>;
 		};
 
 		// Main modifiers and arrow keys
-		ext_layer {
-			label = "Mods";
+		raise_layer {
+			label = "Raise";
 			bindings = <
 			&kp ESC  &kp C_PREV &kp C_PP  &kp C_NEXT  &kp C_PAUSE    	&kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
 			&sk LALT &sk LGUI  &sk LSHIFT  &sk LCTRL  &kp RALT 			&kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL
 			&kp LC(Z)  &kp LC(X) &kp LC(C) &kp TAB   &kp LC(V)          &kp LC(BSPC) &kp BSPC &trans &trans  &trans
 																		&trans &kp LCTRL    &kp ENTER  &mo FNC 
+
 			>;
 		};
 
 		// Function keys with modifiers
-		fnc_layer {
-			label = "FRow";
+		mov_layer {
+			label = "Mov";
 			bindings = <
 			&kp F1 &kp F2 &kp F3 &kp F4 &kp F5                  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
 			&sk LALT &sk LGUI &sk LSHIFT &sk LCTRL &kp RALT     &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
@@ -129,9 +215,8 @@
 			>;
 		};
 
-		// Low frequency symbols.
-		symbols_2_layer {
-			label = "Sym.2";
+		adjust_layer {
+			label = "Adjust";
 			bindings = <
 			&kp IT_CARET &kp IT_UNDER &kp IT_PND &kp IT_EUR &kp IT_HASH         &none &none &none &none &none 
 			&kp IT_BKTK &kp IT_TILDE &kp IT_BSLH &kp IT_PIPE &kp IT_AND         &none &none &none &none &none
@@ -140,9 +225,8 @@
 			>;
 		};
 
-		// Used to type regional accents.
-		accent_layer {
-			label = "Accent";
+		num_layer {
+			label = "Num";
 			bindings = <
 			&none &none &none &kp IT_CEGR &none                         &none &none &none &none &none 
 			&kp IT_AGRV &kp IT_IGRV &kp IT_OGRV &kp IT_EGRV &kp IT_EACU &none &none &none &none &none
