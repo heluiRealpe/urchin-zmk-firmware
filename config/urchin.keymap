@@ -185,7 +185,7 @@
 			label = "Raise";
 			bindings = <
             &td_extil &kp AT &kp HASH &kp DLR &kp PERC    &kp CIRC &kp AMPS &kp ASTR &kp LPAR &kp RPAR
-            &kp PSCR &macro_winshot &kp PGUP &kp PGDN &macro_cad &kp PIPE &kp UNDER &kp PLUS &kp LCBR &kp RCBR
+            &kp PSCR &macro_winshot &kp PGUP &kp PGDN &kp LA(LC(DELETE)) &kp PIPE &kp UNDER &kp PLUS &kp LCBR &kp RCBR
             &kp PLAY &kp REC &kp PLAY &kp REC &kp STOP &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
                                     &tog MOV &trans    &trans &trans
 			>;
