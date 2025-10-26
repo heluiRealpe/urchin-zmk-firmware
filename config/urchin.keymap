@@ -114,7 +114,7 @@
             &td_q_tab &td_whome &td_eend &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
             &td_a_esc &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &td_sclqt
             &mt LSHIFT Z &mt LCTRL X &mt LALT C &mt LGUI V &kp B &kp N &mt RGUI M &mt RALT COMM &mt RCTRL DOT &mt RSHIFT SLASH
-            &lt LOWER BSPC &lt NUM SPACE &kp SPACE &lt RAISE ENT
+            &lt LOWER BSPC &lt NUM SPACE &kp SPACE &lt RAISE ENTER
             >;
 		};
 
@@ -125,7 +125,7 @@
             &td_onegr &kp N2 &kp N3 &kp N4 &kp N5         &kp N6   &kp N7 &kp N8 &kp N9 &kp N0
             &kp ESC &kp LALT_TAB &kp RC(TAB) &key_repeat  &kp TAB        &kp BSLS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT
             &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y) &kp CAPS &kp CW_TOGG &mt LALT COMM &kp DOT &kp SLASH
-                                         &trans &kp ENT    &mo ADJUST &tog MOV
+                                         &trans &kp ENTER    &mo ADJUST &tog MOV
 			>;
 		};
 
