@@ -118,6 +118,7 @@
             bindings = <&kp E &kp END>;
         };
         td_ene: td_ene {
+            compatible = "zmk,behavior-tap-dance";
             label = "TD_ENE";
             #binding-cells = <0>;
             tapping-term-ms = <215>;
@@ -156,18 +157,18 @@ macro5: macro_string_two {
     compatible = "zmk,behavior-macro-one-op";
     #binding-cells = <0>;
     bindings = <&macro_tap>;
-    tap = <&kp LS(B) &kp N3 &kp L &kp DLLR &kp N 
-           &kp LS(R) &kp V &kp N1 &kp Z 
+    tap = <&kp LS(B) &kp N3 &kp L &kp DLLR &kp N
+           &kp LS(R) &kp V &kp N1 &kp Z
            &kp LS(F) &kp N3 &kp R &kp N &kp DLLR &kp N &kp D &kp N3 &kp Z>;
 };
-macro6: macro_string_three { 
+macro6: macro_string_three {
     label = "MACRO6";
     compatible = "zmk,behavior-macro-one-op";
     #binding-cells = <0>;
     bindings = <&macro_tap>;
-    tap = <&kp N3 &kp S &kp T &kp R &kp N3 &kp L &kp L &kp N4 
-           &kp LS(R) &kp N3 &kp N4 &kp L &kp P &kp N3 
-           &kp AMPS // & = AMPS (or LS(N7))
+    tap = <&kp N3 &kp S &kp T &kp R &kp N3 &kp L &kp L &kp N4
+           &kp LS(R) &kp N3 &kp N4 &kp L &kp P &kp N3
+           &kp AMPS
            &kp LS(R) &kp V &kp N1 &kp Z>;
 };
     };
