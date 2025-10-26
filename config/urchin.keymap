@@ -131,7 +131,7 @@
 		raise_layer {
 			label = "Raise";
 			bindings = <
-            &td_extil &kp AT_SIGN &kp HASH &kp DOLLAR &kp PERCENT    &kp CARET &kp AMPS &kp ASTR &kp LPAR &kp RPAR
+            &td_extil &kp AT_SIGN &kp HASH &kp DOLLAR &kp PERCENT    &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR
             &kp PRINTSCREEN &kp LG(S) &kp PG_UP &kp PG_DN &kp LA(LC(DELETE)) &kp PIPE &kp UNDER &kp PLUS &kp LS(LBKT) &kp LS(RBKT)
             &kp PLAY &kp REC &kp PLAY &kp REC &kp STOP &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
                                     &tog MOV &trans    &trans &trans
