@@ -118,7 +118,6 @@
             >;
 		};
 
-&mt LALT C
 		lower_layer {
 			label = "Lower";
 			bindings = <
