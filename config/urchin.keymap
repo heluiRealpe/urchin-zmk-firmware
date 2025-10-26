@@ -121,9 +121,9 @@
 		lower_layer {
 			label = "Lower";
 			bindings = <
-            &td_onegr &kp N2 &kp N3 &kp N4 &kp N5         &kp N6   &kp N7 &kp N8 &kp N9 &kp N0
-            &kp ESC &kp LALT_TAB &kp RC(TAB) &key_repeat  &kp TAB        &kp BSLS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT
-            &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y) &kp CAPS &kp CW_TOGG &mt LALT COMM &kp DOT &kp SLASH
+            &td_onegr &kp N2 &kp N3 &kp N4 &kp N5         &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+            &kp ESC &kp LA(TAB) &kp RC(TAB) &key_repeat  &kp TAB        &kp BSLS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT
+            &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y) &kp CAPS &caps_word &mt LALT COMMA &kp DOT &kp SLASH
                                          &trans &kp ENTER    &mo ADJUST &tog MOV
 			>;
 		};
