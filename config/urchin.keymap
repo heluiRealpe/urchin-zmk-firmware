@@ -117,6 +117,13 @@
             tapping-term-ms = <215>;
             bindings = <&kp E &kp END>;
         };
+        td_ene: td_ene {
+            label = "TD_ENE";
+            #binding-cells = <0>;
+            tapping-term-ms = <215>;
+            bindings = <&kp N &kp RA(N)>;
+
+        };
     };
 
 	keymap {
@@ -126,7 +133,7 @@
 			bindings = <
             &td_q_tab &td_whome &td_eend &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
             &td_a_esc &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &td_sclqt
-            &mt LSHIFT Z &mt LCTRL X &mt LALT C &mt LGUI V &kp B &kp N &mt RGUI M &mt RALT COMMA &mt RCTRL DOT &mt RSHIFT SLASH
+            &mt LSHIFT Z &mt LCTRL X &mt LALT C &mt LGUI V &kp B &td_ene &mt RGUI M &mt RALT COMMA &mt RCTRL DOT &mt RSHIFT SLASH
             &lt LOWER BSPC &lt NUM SPACE &kp SPACE &lt RAISE ENTER
             >;
 		};
