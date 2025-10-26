@@ -69,51 +69,51 @@
 
     tap_dances {
         td_q_tab: td_q_tab {
-            compatible = "zmk,behavior-tap-dance"; // FIX 2: Correct compatible property
+            compatible = "zmk,behavior-tap-dance";
             label = "TD_Q_TAB";
-            #binding-cells = <0>;                  // FIX 3: Add required property
+            #binding-cells = <0>;
             tapping-term-ms = <215>;
             bindings = <&kp Q &kp TAB>;
         };
         td_a_esc: td_a_esc {
-            compatible = "zmk,behavior-tap-dance"; // FIX 2
+            compatible = "zmk,behavior-tap-dance";
             label = "TD_A_ESC";
-            #binding-cells = <0>;                  // FIX 3
+            #binding-cells = <0>;
             tapping-term-ms = <215>;
             bindings = <&kp A &kp ESC>;
         };
         td_onegr: td_onegr {
-            compatible = "zmk,behavior-tap-dance"; // FIX 2
+            compatible = "zmk,behavior-tap-dance";
             label = "TD_ONEGR";
-            #binding-cells = <0>;                  // FIX 3
+            #binding-cells = <0>;
             tapping-term-ms = <215>;
             bindings = <&kp N1 &kp GRAVE>;
         };
         td_extil: td_extil {
-            compatible = "zmk,behavior-tap-dance"; // FIX 2
+            compatible = "zmk,behavior-tap-dance";
             label = "TD_EXTIL";
-            #binding-cells = <0>;                  // FIX 3
+            #binding-cells = <0>;
             tapping-term-ms = <215>;
             bindings = <&kp N1 &kp TILDE>;
         };
         td_sclqt: td_sclqt {
-            compatible = "zmk,behavior-tap-dance"; // FIX 2
+            compatible = "zmk,behavior-tap-dance";
             label = "TD_SCLQT";
-            #binding-cells = <0>;                  // FIX 3
+            #binding-cells = <0>;
             tapping-term-ms = <215>;
             bindings = <&kp SCLN &kp QUOT>;
         };
         td_whome: td_whome {
-            compatible = "zmk,behavior-tap-dance"; // FIX 2
+            compatible = "zmk,behavior-tap-dance";
             label = "TD_WHOME";
-            #binding-cells = <0>;                  // FIX 3
+            #binding-cells = <0>;
             tapping-term-ms = <215>;
             bindings = <&kp W &kp HOME>;
         };
         td_eend: td_eend {
-            compatible = "zmk,behavior-tap-dance"; // FIX 2
+            compatible = "zmk,behavior-tap-dance";
             label = "TD_EEND";
-            #binding-cells = <0>;                  // FIX 3
+            #binding-cells = <0>;
             tapping-term-ms = <215>;
             bindings = <&kp E &kp END>;
         };
