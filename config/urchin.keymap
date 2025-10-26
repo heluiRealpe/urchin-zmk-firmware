@@ -152,7 +152,7 @@
 			label = "Adjust";
 			bindings = <
             &trans &trans &kp END &trans &trans        &trans &trans &trans &trans &trans
-            &kp HOME &trans &kp BRIU &kp BRID &trans    &trans &trans &trans &trans &trans
+            &kp HOME &trans &kp C_BRI_UP &kp C_BRI_DN &trans    &trans &trans &trans &trans &trans
             &trans &trans &trans &trans &trans         &trans &trans &trans &trans &trans
                                     &trans &trans    &trans &trans
 			>;
@@ -161,9 +161,9 @@
 		num_layer {
 			label = "Num";
 			bindings = <
-            &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &kp MS_BTN2 &kp MS_BTN1 &kp MS_U &kp DEL &kp BSPC
-            &kp F6 &kp F7 &kp F8 &kp F9 &kp F10        &kp MS_BTN3 &kp MS_L &kp MS_D &kp MS_R &kp QUOT
-            &kp F11 &kp F12 &trans &trans &trans       &trans &kp LEFT &trans &trans &trans
+            &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &trans &trans &trans &kp DEL &kp BSPC
+            &kp F6 &kp F7 &kp F8 &kp F9 &kp F10        &trans &trans &trans &trans &kp QUOT
+            &kp F11 &kp F12 &trans &trans &trans       &trans &trans &trans &trans &trans
                                     &trans &trans    &trans &trans
 			>;
 		};
