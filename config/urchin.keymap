@@ -125,52 +125,6 @@
             bindings = <&kp N &kp RA(N)>;
 
         };
-        macro2: macro_string_one {
-            label = "MACRO2";
-            compatible = "zmk,behavior-macro-one-op";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>;
-            tap = <&kp Y &kp N0 &kp N4 &kp N5 &kp N7 &kp N5 &kp N9 &kp N5 &kp R
-           &kp LS(H) &kp N3 &kp C &kp T &kp N0 &kp R
-           &kp LS(R) &kp N3 &kp N4 &kp L &kp P &kp N3
-           &kp LS(C) &kp N4 &kp S &kp T &kp R &kp N1 &kp L &kp L &kp N0>;
-        };
-macro3: macro_password_one {
-    label = "MACRO3";
-    compatible = "zmk,behavior-macro-one-op";
-    #binding-cells = <0>;
-    bindings = <&macro_tap>;
-    tap = <&kp LS(Z) &kp N9
-           &kp LS(T) &kp N4 &kp J &kp H &kp N4
-           &kp LS(Z) &kp Q &kp H &kp DOLLAR
-           &kp LS(B) &kp F &kp P &kp LS(I)>;
-};
-macro4: macro_number_one {
-    label = "MACRO4";
-    compatible = "zmk,behavior-macro-one-op";
-    #binding-cells = <0>;
-    bindings = <&macro_tap>;
-    tap = <&kp N2 &kp N4 &kp N1 &kp N7 &kp N9 &kp N0 &kp N6>;
-};
-macro5: macro_string_two {
-    label = "MACRO5";
-    compatible = "zmk,behavior-macro-one-op";
-    #binding-cells = <0>;
-    bindings = <&macro_tap>;
-    tap = <&kp LS(B) &kp N3 &kp L &kp DLLR &kp N
-           &kp LS(R) &kp V &kp N1 &kp Z
-           &kp LS(F) &kp N3 &kp R &kp N &kp DLLR &kp N &kp D &kp N3 &kp Z>;
-};
-macro6: macro_string_three {
-    label = "MACRO6";
-    compatible = "zmk,behavior-macro-one-op";
-    #binding-cells = <0>;
-    bindings = <&macro_tap>;
-    tap = <&kp N3 &kp S &kp T &kp R &kp N3 &kp L &kp L &kp N4
-           &kp LS(R) &kp N3 &kp N4 &kp L &kp P &kp N3
-           &kp AMPS
-           &kp LS(R) &kp V &kp N1 &kp Z>;
-};
     };
 
 	keymap {
@@ -218,8 +172,8 @@ macro6: macro_string_three {
 		adjust_layer {
 			label = "Adjust";
 			bindings = <
-            &trans &trans &kp END &trans &trans        &trans &macro3 &macro4 &macro2 &trans
-            &kp HOME &trans &kp C_BRI_UP &kp C_BRI_DN &macro5 &macro6 &trans &trans &trans &trans
+            &trans &trans &kp END &trans &trans        &trans &trans &trans &trans &trans
+            &kp HOME &trans &kp C_BRI_UP &kp C_BRI_DN &trans    &trans &trans &trans &trans &trans
             &trans &trans &trans &trans &trans         &trans &trans &trans &trans &trans
                                     &trans &trans    &trans &trans
 			>;
