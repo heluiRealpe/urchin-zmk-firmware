@@ -19,6 +19,16 @@
 #define SETTINGS 6
 // -----------------
 
+#define UNDO LC(Z)
+#define CUT LC(X)
+#define COPY LC(C)
+#define PASTE LC(V)
+#define REDO LC(Y)
+#define LALT_TAB LA(TAB)
+#define RCTRL_TAB RC(TAB)
+#define WINSHOT LG(S)
+#define N_TILDE RA(N)
+
 &sk {
 	// don't release mods on other mods presses
 	ignore-modifiers;
@@ -50,51 +60,6 @@
 			#binding-cells = <0>;
 			bindings = <&kp LSHIFT &kp RSHIFT &kp LCTRL &kp RCTRL &kp LALT &kp RALT &kp LGUI &kp RGUI>;
 		};
-        macro_undo {
-            label = "UNDO";
-            compatible = "zmk,macro";
-            bindings = <&kp LCTRL &kp Z>;
-        };
-        macro_cut {
-            label = "CUT";
-            compatible = "zmk,macro";
-            bindings = <&kp LCTRL &kp X>;
-        };
-        macro_copy {
-            label = "COPY";
-            compatible = "zmk,macro";
-            bindings = <&kp LCTRL &kp C>;
-        };
-        macro_paste {
-            label = "PASTE";
-            compatible = "zmk,macro";
-            bindings = <&kp LCTRL &kp V>;
-        };
-        macro_redo {
-            label = "REDO";
-            compatible = "zmk,macro";
-            bindings = <&kp LCTRL &kp Y>;
-        };
-        macro_lalttab {
-            label = "LALT_TAB";
-            compatible = "zmk,macro";
-            bindings = <&kp LALT &kp TAB>;
-        };
-        macro_rctrltab {
-            label = "RCTRL_TAB";
-            compatible = "zmk,macro";
-            bindings = <&kp RCTRL &kp TAB>;
-        };
-        macro_winshot {
-            label = "WINSHOT";
-            compatible = "zmk,macro";
-            bindings = <&kp LGUI &kp S>;
-        };
-        macro_n_tilde {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RALT &kp N>; // Assumes RALT + N sends 'ñ' on your OS
-        };
 	};
 
 	combos {
@@ -152,7 +117,7 @@
         td_ene {
             label = "TD_ENE";
             tapping-term-ms = <215>;
-            bindings = <&kp N &macro_n_tilde>;
+            bindings = <&kp N &kp N_TILDE>;
         };
     };
 
@@ -163,7 +128,7 @@
 			bindings = <
             &td_q_tab &td_whome &td_eend &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
             &td_a_esc &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &td_sclqt
-            &mt LSHIFT Z &mt LCTRL X &mt LALT C &mt LGUI V &kp B &td_ene &mt RGUI M &mt RALT COMM &mt RCTRL DOT &mt RSHIFT SLASH
+            &mt LSHIFT Z &mt LCTRL X &mt LALT C &mt LGUI V &kp B &N_TILDE &mt RGUI M &mt RALT COMM &mt RCTRL DOT &mt RSHIFT SLASH
             &lt LOWER BSPC &lt NUM SPACE &kp SPACE &lt RAISE ENT
             >;
 		};
@@ -171,9 +136,9 @@
 		lower_layer {
 			label = "Lower";
 			bindings = <
-            &td_onegr   &kp N2         &kp N3          &kp N4       &kp N5         &kp N6   &kp N7 &kp N8 &kp N9 &kp N0
-            &kp ESC     &macro_lalttab &macro_rctrltab &key_repeat  &kp TAB        &kp BSLS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT
-            &macro_undo &macro_cut     &macro_copy     &macro_paste &macro_redo    &kp CAPS &kp CW_TOGG &mt LALT COMM &kp DOT &kp SLASH
+            &td_onegr &kp N2 &kp N3 &kp N4 &kp N5         &kp N6   &kp N7 &kp N8 &kp N9 &kp N0
+            &kp ESC &kp LALT_TAB &kp RCTRL_TAB &key_repeat  &kp TAB        &kp BSLS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT
+            &kp UNDO &kp CUT &kp CUT &kp PASTE &kp REDO &kp CAPS &kp CW_TOGG &mt LALT COMM &kp DOT &kp SLASH
                                          &trans &kp ENT    &mo ADJUST &tog MOV
 			>;
 		};
@@ -182,7 +147,7 @@
 			label = "Raise";
 			bindings = <
             &td_extil &kp AT &kp HASH &kp DLR &kp PERC    &kp CIRC &kp AMPS &kp ASTR &kp LPAR &kp RPAR
-            &kp PSCR &macro_winshot &kp PGUP &kp PGDN &kp LA(LC(DELETE)) &kp PIPE &kp UNDER &kp PLUS &kp LCBR &kp RCBR
+            &kp PSCR &kp WINSHOT &kp PGUP &kp PGDN &kp LA(LC(DELETE)) &kp PIPE &kp UNDER &kp PLUS &kp LCBR &kp RCBR
             &kp PLAY &kp REC &kp PLAY &kp REC &kp STOP &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
                                     &tog MOV &trans    &trans &trans
 			>;
