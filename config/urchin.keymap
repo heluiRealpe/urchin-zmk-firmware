@@ -218,7 +218,7 @@ macro6: macro_string_three {
 		adjust_layer {
 			label = "Adjust";
 			bindings = <
-            &trans &trans &kp END &trans &trans        &trans &marco3 &macro4 &macro2 &trans
+            &trans &trans &kp END &trans &trans        &trans &macro3 &macro4 &macro2 &trans
             &kp HOME &trans &kp C_BRI_UP &kp C_BRI_DN &trans &macro5 &macro6 &trans &trans &trans
             &trans &trans &trans &trans &trans         &trans &trans &trans &trans &trans
                                     &trans &trans    &trans &trans
