@@ -189,7 +189,7 @@ macro1: macro_string_v1q {
 			bindings = <
             &td_q_tab &td_whome &td_eend &kp R &kp T &kp Y &kp U &kp I &kp O &kp P
             &td_a_esc &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &td_sclqt
-            &qt LSHIFT Z &qt LCTRL X &qt LALT C &qt LGUI V &qt B &td_ene &qt RGUI M &qt RALT COMMA &qt RCTRL DOT &qt RSHIFT SLASH
+            &qt LSHIFT Z &qt LCTRL X &qt LALT C &qt LGUI V &kp B &td_ene &qt RGUI M &qt RALT COMMA &qt RCTRL DOT &qt RSHIFT SLASH
             &lt LOWER BSPC &lt NUM SPACE &kp SPACE &lt RAISE ENTER
             >;
 		};
