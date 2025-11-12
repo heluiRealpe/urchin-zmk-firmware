@@ -206,7 +206,7 @@
 		raise_layer {
 			label = "Raise";
 			bindings = <
-            &td_extil &kp LS(N2) &kp NUHS &kp LS(N4) &kp LS(N5)    &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0)
+            &td_extil &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)    &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0)
             &kp PRINTSCREEN &kp LG(S) &kp PG_UP &kp PG_DN &kp LA(LC(DELETE)) &kp PIPE &kp UNDER &kp PLUS &kp LS(LBKT) &kp LS(RBKT)
             &kp LSHIFT &kp LCTRL &kp LALT &kp LGUI &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
                                     &tog MOV &trans    &trans &trans
@@ -216,7 +216,7 @@
 		mov_layer {
 			label = "Mov";
 			bindings = <
-            &to QWERTY &to QWERTY &to QWERTY &to QWERTY &to QWERTY &kp C_PLAY_PAUSE &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &to QWERTY
+            &to QWERTY &to QWERTY &trans &to QWERTY &to QWERTY &kp C_PLAY_PAUSE &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &to QWERTY
             &to QWERTY &to QWERTY &mkp LCLK &mkp RCLK &mkp MCLK &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &to QWERTY
             &kp LSHIFT &kp LCTRL &kp LALT &kp LGUI &to QWERTY &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &to QWERTY
                                     &none &none    &none &none
