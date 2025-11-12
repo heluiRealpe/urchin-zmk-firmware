@@ -206,7 +206,7 @@
 		raise_layer {
 			label = "Raise";
 			bindings = <
-            &td_extil &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)    &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0)
+            &td_extil &kp LS(N2) &kp RS(N3) &kp LS(N4) &kp LS(N5)    &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0)
             &kp PRINTSCREEN &kp LG(S) &kp PG_UP &kp PG_DN &kp LA(LC(DELETE)) &kp PIPE &kp UNDER &kp PLUS &kp LS(LBKT) &kp LS(RBKT)
             &kp LSHIFT &kp LCTRL &kp LALT &kp LGUI &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
                                     &tog MOV &trans    &trans &trans
