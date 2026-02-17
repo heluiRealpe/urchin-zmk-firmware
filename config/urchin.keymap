@@ -199,7 +199,7 @@
             label = "MOV";
             bindings = <
                 &kp TOG_QWERTY &kp TOG_ACL0 &kp TOG_ACL1 &kp TOG_ACL2 &kp TOG_QWERTY &kp PLAY &kp VOL_DOWN &kp VOL_UP &kp MUTE &kp TOG_QWERTY
-                &kp TOG_QWERTY &kp TOG_QWERTY &kp MS_BTN2 &kp MS_BTN1 &kp TOG_QWERTY &kp WH_L &kp WH_D &kp WH_U &kp WH_R &kp TOG_QWERTY
+                &kp TOG_QWERTY &kp TOG_QWERTY MS_BTN1 &kp MS_BTN2 &kp &kp TOG_QWERTY &kp WH_L &kp WH_D &kp WH_U &kp WH_R &kp TOG_QWERTY
                 &kp LSHIFT &kp LCTRL &kp LALT &kp LGUI &kp TOG_QWERTY &kp WH_L &kp WH_D &kp WH_U &kp WH_R &kp TOG_QWERTY
                                     &trans &trans    &trans &trans
             >;
@@ -220,7 +220,7 @@
             bindings = <
                 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &kp MS_BTN2 &kp MS_BTN1 &kp MS_U &kp DEL &kp BSPC
                 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10        &kp MS_BTN3 &kp MS_L &kp MS_D &kp MS_R &kp QUOT
-                &kp F11 &kp F12 &trans &trans &trans       &trans &kp LEFT &trans &trans &trans
+                &kp F11 &kp F12 &trans &kp MS_BTN1 &kp MS_BTN2       &trans &kp LEFT &trans &trans &trans
                                     &trans &trans    &trans &trans
             >;
         };
