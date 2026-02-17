@@ -198,7 +198,7 @@
 			bindings = <
             &td_onegr &kp N2 &kp N3 &kp N4 &kp N5                       &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
             &kp ESC &kp LA(TAB) &kp RC(TAB) &key_repeat  &kp TAB        &kp BSLH &kp MINUS &kp EQUAL &kp LBKT &kp RBKT
-            &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Y)           &kp CAPS &caps_word &qt LALT COMMA &kp DOT &kp SLASH
+            &kp LC(Z) &kp LC(X) &mkp RCLK &mkp LCLK &kp LC(Y)           &kp CAPS &caps_word &qt LALT COMMA &kp DOT &kp SLASH
                                          &trans &kp ENTER               &mo ADJUST &tog MOV
 			>;
 		};
