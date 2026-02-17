@@ -199,7 +199,7 @@
             label = "MOV";
             bindings = <
                 &kp TOG_QWERTY &kp TOG_ACL0 &kp TOG_ACL1 &kp TOG_ACL2 &kp TOG_QWERTY &kp PLAY &kp VOL_DOWN &kp VOL_UP &kp MUTE &kp TOG_QWERTY
-                &kp TOG_QWERTY &kp TOG_QWERTY MS_BTN1 &kp MS_BTN2 &kp &kp TOG_QWERTY &kp WH_L &kp WH_D &kp WH_U &kp WH_R &kp TOG_QWERTY
+                &kp TOG_QWERTY &kp TOG_QWERTY &kp MS_BTN1 &kp MS_BTN2 &kp TOG_QWERTY &kp WH_L &kp WH_D &kp WH_U &kp WH_R &kp TOG_QWERTY
                 &kp LSHIFT &kp LCTRL &kp LALT &kp LGUI &kp TOG_QWERTY &kp WH_L &kp WH_D &kp WH_U &kp WH_R &kp TOG_QWERTY
                                     &trans &trans    &trans &trans
             >;
